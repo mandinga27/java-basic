@@ -49,13 +49,28 @@ public class ManejoArchivos {
         }
     }
 
-    public static void leerSrchivo(String nombreArchivo) {
-        /*para este metodo necesita:
-        * ruta archivo
-        * nombre archivo
-        * metodo leer
-        * imprimir resultado
-         */
+    /*para este metodo necesita:
+     * ruta archivo
+     * nombre archivo
+     * Parametros: nombreArchivo viene de la Clase PruebaManejoArchivos, contiene el nombre de test.txt
+     * metodo leer con while, mientras encuentre un espacio en blanco el file -> null -> termino cilco
+     * imprimir resultado
+     * retorna: N/A
+     */
+    public static void leerArchivo(String nombreArchivo) {
+        var archivo = new File(nombreArchivo);
+        try {
+            var entrada = new BufferedReader( new FileReader(archivo));//la clase leer lineas completas del archiv caracter por caracter
+            var lectura = entrada.readLine(); //la clase readLine lee todo el contenido del archivo
+            while (lectura != null) { //al leer linea en blanco termina el ciclo
+                System.out.println("lectura = " + lectura);
+                lectura = entrada.readLine(); //aca se almacena el contenido de la lectura
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace(System.out);
+        } catch (IOException e) {
+            e.printStackTrace(System.out);
+        }
     }
 
 }

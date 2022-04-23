@@ -1,28 +1,4 @@
-Hola desde Java
-Hola desde Python
+Hola desde Angular
+Hola desde C
 
-Te veo en la próxima escritura
-Hola desde Java
-Hola desde Python
-
-Te veo en la próxima escritura
-Hola desde Java
-Hola desde Python
-
-Te veo en la próxima escritura
-Hola desde Java
-Hola desde Python
-
-Te veo en la próxima escritura
-Hola desde Java
-Hola desde Python
-
-Te veo en la próxima escritura
-Hola desde Java
-Hola desde Python
-
-Te veo en la próxima escritura
-Hola desde Java
-Hola desde Python
-
-Te veo en la próxima escritura
+Hola desde React
